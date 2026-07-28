@@ -56,6 +56,7 @@ cmp file1 file2
  
 comm file1 file2
  ## OUTPUT
+ ![commop](op-img/comm-op.png)
 
  
 diff file1 file2
