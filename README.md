@@ -86,17 +86,17 @@ cat > file22
 cut -c1-3 file11
 ## OUTPUT
 
-
+![cut-op](op-img/cut-op.png)
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-
-
+				
+![cut-d1-op](op-img/cut-d1-op.png)
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-
+![cut-d2-op](cut-d2-op.png)
 
 cat < newfile 
 ```
