@@ -96,7 +96,7 @@ cut -d "|" -f 1 file22
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-![cut-d2-op](cut-d2-op.png)
+![cut-d2-op](op-img/cut-d2-op.png)
 
 cat < newfile 
 ```
