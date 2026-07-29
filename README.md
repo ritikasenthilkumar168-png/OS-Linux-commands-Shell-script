@@ -96,7 +96,7 @@ cut -d "|" -f 1 file22
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-![cut-d2-op](cut-d2-op.png)
+![cut-d2-op](op-img/cut-d2-op.png)
 
 cat < newfile 
 ```
@@ -107,42 +107,38 @@ hello world
 cat > newfile 
 Hello world
 hello world
- 
+ ```
 grep Hello newfile 
+
 ## OUTPUT
-
-
+![grep-hello-op](op-img/grep-hello-op.png)
 
 grep hello newfile 
 ## OUTPUT
-
-
-
+![grep-hello2-op](op-img/grep-hello2-op.png)
 
 grep -v hello newfile 
 ## OUTPUT
-
-
+![grep-v-hello-op](op-img/grep-v-hello-op.png)
 
 cat newfile | grep -i "hello"
 ## OUTPUT
-
-
+![grep-i-hello-op](op-img/grep-i-hello-op.png)
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
-
-
+![grep-i-c-op](op-img/grep-i-c-op.png)
 
 
 grep -R ubuntu /etc
 ## OUTPUT
-
+![grep-R-op](<op-img/grep -R.png>)
 
 
 grep -w -n world newfile   
 ## OUTPUT
+![grep-w-n-op](op-img/grep-w-n.png)
 
 
 cat < newfile 
@@ -166,60 +162,60 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-
+![egrep-w-op](op-img/egrep-w.png)
 
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
-
+![egreo-w2-op](op-img/egrep-w2-op.png)
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
-
+![egrep-w3-op](op-img/egrep-w3-op.png)
 
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
-
+![egrep-w4-op](op-img/egrep-w4-op.png)
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
-
+![egrep-w5-op](op-img/egrep-w5-op.png)
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
-
+![egrep-w6-op](op-img/egrep-w6-op.png)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
-
+![egrep-w7-op](op-img/egrep-w7-op.png)
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
-
+![egrep-1-9-op](op-img/egrep-1-9-op.png)
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
-
+![egrep-lw1-op](op-img/egrep-lw1-op.png)
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
-
+![egrep-lw-2-op](op-img/egrep-lw-2-op.png)
 
 egrep l{2} newfile
 ## OUTPUT
-
+![egrep-l2-op](op-img/egrep-l2-op.png)
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
-
+![egrep-s-op](op-img/egrep-s-op.png)
 
 cat > file23
 ```
