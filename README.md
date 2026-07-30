@@ -233,80 +233,80 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-
+![sed-1-op](op-img/sed-1-op.png)
 
 
 sed -n -e '$p' file23
 ## OUTPUT
-
+![sed-2-op](op-img/sed-2-op.png)
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
-
+![sed-3-op](op-img/sed-3-op.png)
 
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
-
+![sed-4-op](op-img/sed-2-op.png)
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
-
+![sed-5-op](op-img/sed-5-op.png)
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
-
+![sed-6-op](op-img/sed-6-op.png)
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
-
+![sed-7-op](op-img/sed-7-op.png)
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
-
+![sed-8-op](op-img/sed-8-op.png)
 
 
 seq 10 
 ## OUTPUT
-
+![seq-1-op](op-img/seq-1-op.png)
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
 
-
+![seq-2-op](op-img/seq-2-op.png)
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
-
+![seq-3-op](op-img/seq-3-op.png)
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
 
-
+![seq-4-op](op-img/seq-4-op.png)
 
 seq 2 | sed '2i hello'
 ## OUTPUT
-
+![seq-5-op](op-img/seq-5-op.png)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-
+![sed2-1-op](op-img/sed2-1-op.png)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
-
+![sed2-2-op](op-img/sed2-2-op.png)
 
 
 sed -n '2,4{s/$/*/;p}' file23
-
+![sed2-3-op](op-img/sed2-3-op.png)
 
 #Sorting File content
 cat > file21
@@ -319,7 +319,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-
+![sort-op](op-img/sort-op.png)
 
 cat > file22
 ```
@@ -332,14 +332,14 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
-
+![uniq-op](op-img/uniq-op.png)
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
-
+![cat-low-op](op-img/cat-low-op.png)
 cat < urllist.txt
 ```
 www. yahoo. com
@@ -355,18 +355,19 @@ www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-
+![cat-tr-1-op](op-img/cat-tr-1-op.png)
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-
+![cat-tr-2-op](op-img/cat-tr-2-op.png)
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-
+![back1-op](op-img/back1-op.png)
+![back2-op](op-img/back2-op.png)
 
 mkdir backupdir
  
